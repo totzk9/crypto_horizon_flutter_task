@@ -40,6 +40,16 @@ class CoinItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    coin.name!,
+                    style: const TextStyle(
+                      color: Colors.white70,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
                 /// Note: some SVG in the API needs to be cleaned for Flutter compatibility which
                 /// is why an error will come up. please disregard any errors because it's
                 /// out of my ability to fix it. Thanks
@@ -52,16 +62,6 @@ class CoinItem extends StatelessWidget {
                       height: 32,
                     ),
                   ),
-                Align(
-                  alignment: Alignment.center,
-                  child: Text(
-                    coin.name!,
-                    style: const TextStyle(
-                      color: Colors.white70,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
