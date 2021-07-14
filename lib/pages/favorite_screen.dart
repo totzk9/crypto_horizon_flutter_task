@@ -1,6 +1,6 @@
 import 'package:crypto_horizon_flutter_task/common/controllers/favorite_controller.dart';
 import 'package:crypto_horizon_flutter_task/common/entity/coin.dart';
-import 'package:crypto_horizon_flutter_task/widgets/coin_item.dart';
+import 'package:crypto_horizon_flutter_task/widgets/favorite_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +21,7 @@ class FavoriteScreen extends GetView<FavoriteController> {
             child: SafeArea(
                 child: ReorderableListView.builder(
                     itemBuilder: (_, int index) {
-                      return CoinItem(
+                      return FavoriteItem(
                         coin: coins[index],
                         key: ValueKey<int>(coins[index].index),
                       );

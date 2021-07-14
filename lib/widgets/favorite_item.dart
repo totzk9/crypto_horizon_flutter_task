@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class CoinItem extends StatelessWidget {
-  const CoinItem({
+class FavoriteItem extends StatelessWidget {
+  const FavoriteItem({
     required this.coin,
     Key? key,
   }) : super(key: key);
@@ -60,6 +60,14 @@ class CoinItem extends StatelessWidget {
                       color: Colors.white70,
                       fontSize: 18,
                     ),
+                  ),
+                ),
+                const Align(
+                  alignment: Alignment.centerRight,
+                  child: Icon(
+                    Icons.menu,
+                    size: 24,
+                    color: Colors.white70,
                   ),
                 ),
               ],
